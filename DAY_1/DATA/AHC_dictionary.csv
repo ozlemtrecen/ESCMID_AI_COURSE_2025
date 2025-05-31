@@ -1,0 +1,39 @@
+key,definition
+gender,gender: m = male / f = female
+location,hospital location (1 = Angkor Hospital for Chidlren / 2 = Satellite Clinic)
+age.d,patient age in days (sample date - birth date)
+icu.vent,complication during admission  = required icu care / ventiliation
+surgery,complication during admission  = required surgery
+bloodtransfusion,complication during admission  = required blood transfusion
+transfer,transferred to AHC/SC from another hospital
+sepsis,admission differential diagnosis incluced sepsis
+meningitis,admission differential diagnosis incluced meningitis
+lrti,admission differential diagnosis incluced lower respiratory tract infection / pneumonia
+urti,admission differential diagnosis incluced upper respiratory tract infection
+diarrhoea,admission differential diagnosis incluced gastroenteritis / dysentery
+cellulitis,admission differential diagnosis incluced cellulitis
+abscess,admission differential diagnosis incluced abscess
+uti,admission differential diagnosis incluced urinary tract infection
+waz,weight for age z-score
+hosptimes1y,times patient hospitalised in the last year
+opdtimes6m,times patient out-patient visits in the last 6 months
+pharmpre,patient treated at a pharmacy before current admission
+nursepre,patient treated by a nurse before current admission
+khrupre,patient treated by a traditional healer (Khru Khmer) before current admission
+ivfluidpre,patient received iv fluids before current admission
+medpre,patient given medication before current admission
+abxprewhich,type of antibiotic given before current admission
+housesize,number of people living in the patients househouse
+domesticanimal,domestic animals in patient house
+livestock,livestock animals in patient family house / compound
+defecate_toilet,does the child normally defecate in a toilet
+fridge,does the household own a fridge
+child_abx3w,has patient taken an antibiotic in the last three weeks
+family_hosp3m,has a family member been hospitalised in the last three months
+recent.envwater,has the patient been exposed to an environmental water source in the last week
+water.treated,does the patient normally drink treated water
+infectcat,infection category (CAI = communiy acquired / HAI = hospital acquired)
+specday,infection onset (sample date - admit date)
+amp.gent.treatable,treatable by ampicillin+gentamicin
+cro.treatable,treatable by ceftriaxone
+gram,organism gram stain

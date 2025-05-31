@@ -1,0 +1,75 @@
+
+ESCMID AI Course - Day 2 Synthetic Data Analysis Summary
+======================================================
+
+Dataset: Synthetic Microbiology Data (Cleaned)
+Analysis Date: 2025-05-31 22:14
+Samples: 9635
+Features Used: 8
+
+Resistance Genes Analyzed:
+- KPC: 46 positive / 9635 total (0.5%)
+- NDM: 29 positive / 9635 total (0.3%)
+- OXA: 38 positive / 9635 total (0.4%)
+- SHV: 207 positive / 9635 total (2.1%)
+- TEM: 264 positive / 9635 total (2.7%)
+- CTXM1: 317 positive / 9635 total (3.3%)
+- CTXM2: 32 positive / 9635 total (0.3%)
+- CTXM825: 24 positive / 9635 total (0.2%)
+- CTXM9: 54 positive / 9635 total (0.6%)
+
+
+Feature Engineering:
+- Categorical encoding: One-hot encoding for 7 categorical features
+- Numerical scaling: StandardScaler for 1 numerical features
+- Missing value handling: Imputation with 'Unknown' category
+
+Machine Learning Approaches:
+1. Single-Target Learning: Individual models for each resistance gene
+2. Multi-Target Learning: One model predicting multiple genes simultaneously
+
+Models Evaluated:
+- Logistic Regression
+- Random Forest
+- Gradient Boosting
+- SVM
+- Naive Bayes
+
+
+Single-Target Results:
+- CTXM1: Best model = Gradient Boosting (AUC = 0.777 ± 0.019)
+- TEM: Best model = Gradient Boosting (AUC = 0.730 ± 0.028)
+- SHV: Best model = Gradient Boosting (AUC = 0.734 ± 0.020)
+
+
+Multi-Target Results:
+- Logistic Regression: Average AUC = 0.708 ± 0.021
+- Random Forest: Average AUC = 0.639 ± 0.021
+- Gradient Boosting: Average AUC = 0.756 ± 0.009
+- SVM: Average AUC = 0.710 ± 0.017
+- Naive Bayes: Average AUC = 0.551 ± 0.007
+
+
+Key Findings:
+- Cross-validation provides robust performance estimates for rare events
+- Different resistance genes show varying predictability
+- Species and clinical source are often important predictive features
+- Multi-target learning can capture gene correlations
+
+Clinical Implications:
+- Models can assist in rapid resistance gene screening
+- Predictions should complement, not replace, molecular testing
+- Performance varies by gene prevalence and biological factors
+- Continuous validation needed for clinical deployment
+
+Next Steps:
+- Validate on external datasets from different institutions
+- Incorporate additional clinical variables (antimicrobial use, etc.)
+- Develop clinical decision support integration
+- Monitor performance drift over time
+
+Models Saved:
+- CTXM1: Gradient Boosting (synthetic_model_CTXM1.pkl)
+- TEM: Gradient Boosting (synthetic_model_TEM.pkl)
+- SHV: Gradient Boosting (synthetic_model_SHV.pkl)
+- Multi-target: Gradient Boosting (synthetic_model_multitarget.pkl)
