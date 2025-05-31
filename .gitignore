@@ -172,3 +172,8 @@ cython_debug/
 
 # PyPI configuration file
 .pypirc
+
+.DS_Store
+
+/DAY_1/DATA/Synthetic_data.csv
+/DAY_1/DATA/Synthetic_Data_cleaned.csv

@@ -1,0 +1,34 @@
+
+ESCMID AI Course - Day 2 Model Development Summary
+================================================
+
+Dataset: AHC Final Dataset
+Samples: 243
+Features: 64
+Target: amp.gent.treatable (binary classification)
+
+Class Distribution:
+- Treatable (Y): 158 (65.0%)
+- Not Treatable (N): 85 (35.0%)
+
+Models Evaluated:
+- Logistic Regression: AUC 0.561 ± 0.047
+- Random Forest: AUC 0.660 ± 0.029
+- Gradient Boosting: AUC 0.543 ± 0.062
+- SVM: AUC 0.638 ± 0.087
+- Naive Bayes: AUC 0.590 ± 0.054
+- KNN: AUC 0.627 ± 0.093
+
+Best Model: Random Forest
+Cross-validation AUC: 0.660 ± 0.029
+
+Key Findings:
+- Cross-validation provides robust performance estimates
+- Random Forest performed best among tested algorithms
+- Feature importance analysis reveals clinical insights
+- Model ready for deployment and external validation
+
+Next Steps:
+- Validate on external datasets
+- Implement in clinical decision support system
+- Monitor performance in real-world deployment
